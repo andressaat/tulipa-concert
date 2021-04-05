@@ -1,0 +1,38 @@
+table {
+   width: 100%;
+}
+
+
+.mat-table__wrapper .mat-table {
+    min-width: auto !important;
+    width: 100% !important;
+}
+
+.mat-header-row {
+    width: 100%;
+}
+
+.mat-row {
+    width: 100%;
+}
+
+.mat-column-id {
+    flex: 0 0 25% !important;
+    min-width: 189px !important;
+}
+
+.mat-column-name {
+    flex: 0 0 25% !important;
+    min-width: 189px !important;
+}
+
+.mat-column-amount {
+    flex: 0 0 25% !important;
+    min-width: 104px !important;
+}
+
+.mat-column-actions{
+    flex: 0 0 25% !important;
+    padding:8px;
+    justify-content: flex-end;
+}

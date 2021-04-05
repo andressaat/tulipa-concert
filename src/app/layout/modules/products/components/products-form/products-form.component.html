@@ -1,0 +1,49 @@
+<div class="product-form-flex">
+    <mat-card>
+      <mat-toolbar color="primary-dark">{{productId?'Editar Produto':'Cadastrar Produto'}}</mat-toolbar>
+      <mat-card-content>
+        <form class="example-form"
+              [formGroup]="form">
+          <mat-form-field class="example-full-width">
+            <mat-label>Produto</mat-label>
+            <input matInput
+                   formControlName="name"
+                   placeholder="Nome">
+          </mat-form-field>
+  
+          <mat-form-field class="example-full-width">
+            <mat-label>Quantidade</mat-label>
+            <input type="number" matInput
+                   formControlName="amount"
+                   placeholder="Quantidade">
+          </mat-form-field>
+  
+          <mat-form-field class="example-full-width">
+            <mat-label>Valor</mat-label>
+            <input currencyMask 
+                   matInput
+                   formControlName="price"
+                   placeholder="Valor">
+          </mat-form-field>
+  
+          <mat-form-field class="example-full-width">
+            <mat-label>Tipo Produto</mat-label>
+            <mat-select formControlName="typeId">
+              <mat-option *ngFor="let type of productTypes"
+                          [value]="type.id">
+                {{type.name}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+  
+        </form>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button
+                color="primary"
+                (click)="save()">Salvar</button>
+        <button mat-raised-button
+                (click)="cancel()">Cancel</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>

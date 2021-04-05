@@ -1,0 +1,73 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "ADMIN",
+      "password": "prova",
+      "login": "concert"
+    }
+  ],
+  "products": [
+    {
+      "id": 2,
+      "name": "Azaléia",
+      "amount": "34343",
+      "price": 23.67,
+      "typeId": 3,
+      "createdAt": "2021-04-04T23:38:03.328Z",
+      "updatedAt": "2021-04-04T23:38:03.328Z"
+    },
+    {
+      "id": 1,
+      "name": "Amor-perfeito 2",
+      "amount": "899",
+      "price": 100,
+      "typeId": 1,
+      "createdAt": "2021-04-04T23:38:03.328Z",
+      "updatedAt": "2021-04-04T23:38:03.328Z"
+    },
+    {
+      "name": "Produto Teste errerrererrerere",
+      "amount": "1000",
+      "price": 200000000,
+      "typeId": 1,
+      "id": 3
+    },
+    {
+      "name": "Novo Produto",
+      "amount": 1001,
+      "price": 60,
+      "typeId": 2,
+      "id": 4
+    },
+    {
+      "name": "Gteste",
+      "amount": 4,
+      "price": 20,
+      "typeId": 5,
+      "id": 5
+    }
+  ],
+  "product-types": [
+    {
+      "id": 1,
+      "name": "Agapanthus africanus"
+    },
+    {
+      "id": 2,
+      "name": "Lobularia maritima"
+    },
+    {
+      "id": 3,
+      "name": "Alstroemeria x hibrida"
+    },
+    {
+      "id": 4,
+      "name": "Hippeastrum hybridum"
+    },
+    {
+      "id": 5,
+      "name": "Viola x wittrockiana"
+    }
+  ]
+}
